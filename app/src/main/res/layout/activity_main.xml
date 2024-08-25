@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#669bbc">
+    android:background="#fdf0d5">
 
     <ImageView
         android:id="@+id/utnLogo"
@@ -29,10 +29,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button_rounded_border"
+        android:onClick="irRegistrarse"
         android:text="@string/btn_Registrarse_Pantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingresarPantalla" />
+        app:layout_constraintTop_toBottomOf="@+id/ingresarPantalla"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/ingresarPantalla"
@@ -42,10 +44,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button_rounded"
+        android:onClick="irIngresar"
         android:text="@string/btn_Ingresar_Pantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contrasenaL" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaL"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/contrasenaL"
@@ -59,7 +63,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameUserL"
-        android:hint="Contraseña"/>
+        android:hint="Contraseña"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/nameUserL"
@@ -70,6 +76,8 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Nombre de Usuario"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#669bbc"
     tools:context=".BienvenidoActivity">
 
     <LinearLayout
@@ -22,6 +23,6 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:text="Le damos la Bienvenida!" />
+            android:text="Bienvenido a la aplicación Juan Torres" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
