@@ -8,21 +8,142 @@
     android:background="#669bbc"
     tools:context=".BienvenidoActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="373dp"
         android:layout_height="649dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831">
+        app:layout_constraintVertical_bias="0.804">
+
+        <ImageView
+            android:id="@+id/iosLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/platformGroup"
+            app:srcCompat="@drawable/apple_logo" />
+
+        <ImageView
+            android:id="@+id/androidLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/platformGroup"
+            app:srcCompat="@drawable/android_logo" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="145dp"
-            android:text="Bienvenido a la aplicación Juan Torres" />
-    </LinearLayout>
+            android:layout_width="373dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Bienvenido a la aplicación Juan Torres"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/platformGroup"
+            android:layout_width="368dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/androidButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/iosButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="iOS"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/preferencesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Preferencias:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iosLogo" />
+
+        <LinearLayout
+            android:id="@+id/preferencesGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/preferencesText"
+            app:layout_constraintVertical_bias="0.0">
+
+            <CheckBox
+                android:id="@+id/programmingCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programación"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/networkingCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Redes"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/securityCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seguridad"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/hardwareCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hardware"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/otherCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otra"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/otherPreferenceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su preferencia"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
