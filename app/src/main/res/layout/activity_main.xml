@@ -31,10 +31,10 @@
         android:background="@drawable/button_rounded_border"
         android:onClick="irRegistrarse"
         android:text="@string/btn_Registrarse_Pantalla"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingresarPantalla"
-        android:textColor="@color/black"/>
+        app:layout_constraintTop_toBottomOf="@+id/ingresarPantalla" />
 
     <Button
         android:id="@+id/ingresarPantalla"

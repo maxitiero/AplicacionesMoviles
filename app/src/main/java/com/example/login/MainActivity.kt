@@ -53,14 +53,4 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, RegistrarseActivity::class.java)
         startActivity(intent)
     }
-
-
-
-
-
-
-
-
-
-
 }
