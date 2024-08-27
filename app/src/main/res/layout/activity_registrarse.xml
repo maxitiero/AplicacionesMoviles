@@ -11,8 +11,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="373dp"
         android:layout_height="649dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="66dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804">
 
         <Button
             android:id="@+id/registrarseR"
@@ -23,7 +26,6 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_rounded_border"
             android:gravity="center"
-            android:onClick=""
             android:text="@string/btn_Registrarse_Pantalla"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +36,7 @@
         <EditText
             android:id="@+id/repetirContrasena"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -50,15 +52,15 @@
         <EditText
             android:id="@+id/contrasenaR"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:hint="Contraseña"
+            android:inputType="textPassword"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/correoElectronico" />
@@ -66,15 +68,15 @@
         <EditText
             android:id="@+id/nameUserR"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:hint="Nombre de Usuario"
+            android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -84,7 +86,6 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +95,7 @@
         <EditText
             android:id="@+id/correoElectronico"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
